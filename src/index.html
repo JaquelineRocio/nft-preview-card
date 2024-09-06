@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preview Card Component</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -15,7 +21,6 @@
             alt="image equilibrium"
             class="card__image"
           />
-          <div class="card__image-overlay"></div>
         </header>
 
         <section class="card__content">
@@ -34,7 +39,7 @@
             </div>
             <div class="card__time-left">
               <img
-                src="path-to-clock-icon.svg"
+                src="../images/icon-clock.svg"
                 alt="Clock Icon"
                 class="card__icon"
               />
@@ -42,6 +47,7 @@
             </div>
           </div>
         </section>
+        <div class="card__line"></div>
         <footer class="card__footer">
           <div class="card__creator">
             <img
@@ -49,7 +55,10 @@
               alt="Jules Wyvern's Avatar"
               class="card__creator-avatar"
             />
-            <span>Creation of <strong>Jules Wyvern</strong></span>
+            <span class="card__creator-name"
+              >Creation of
+              <p>Jules Wyvern</p></span
+            >
           </div>
         </footer>
       </article>
